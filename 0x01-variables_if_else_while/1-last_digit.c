@@ -1,20 +1,30 @@
-#include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 
 /**
- *  main - prints the alphabet.
+ * main - prints the last digit of a randomly generated number
+ * ans whether it is greater than 5, less than 6, or 0.
  *
- *  Return: Alawys 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
-	char alp[26] - "abcdefghijklmnopqrstuvwxyz";
-	int i;
+	int n;
 
-	for (i = 0; i < 26; i++)
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+
+	if ((n % 10) > 5)
 	{
-		putchar(alp[i]);
+		printf("last digit of %d is %d and is greather than  5\n", n, n % 10);
 	}
-	putchar('\n');
+	else if ((n % 10) < 6 && (n % 10) != 0)
+	{
+		printf("last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
+	}
+	else
+	{
+		printf("last digit of %d is %d and is 0\n", n, n % 10);
+	}
 	return (0);
 }
