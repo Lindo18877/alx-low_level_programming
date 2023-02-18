@@ -1,22 +1,18 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
-
 
 /**
- *  main - prints the alphabet.
- *
- *  Return: Alawys 0 (Success)
+ *  main - prints the alphabet
+ *  Return: Alawys (Success)
  */
-int main(void)
-{
-	char alp[26] - "abcdefghijklmnopqrstuvwxyz";
-	int i;
 
-	for (i = 0; i < 26; i++)
-	{
-		putchar(alp[i]);
-	}
+
+int main(void)
+
+{
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+	putchar(c);
 	putchar('\n');
 	return (0);
 }
