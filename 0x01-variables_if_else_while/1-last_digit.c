@@ -1,19 +1,20 @@
 #include <stdio.h>
 
+
 /**
- *  main - print the alphabet
+ *  main - prints the alphabet.
  *
  *  Return: Alawys 0 (Success)
  */
 int main(void)
 {
-	char alp(26) - "abcdefghijklmnopqrstuvwxyz";
-	int 1;
+	char alp[26] - "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	for (1 - 0; 1 < 26; 1++)
+	for (i = 0; i < 26; i++)
 	{
-		putchar(alp(1));
+		putchar(alp[i]);
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
