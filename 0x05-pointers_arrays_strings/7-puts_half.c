@@ -7,7 +7,6 @@
  * @str: The string to print
  * Return: void
  */
-
 void print_half_string(char* str) {
 int len = strlen(str);
 int half_len = len / 2;
