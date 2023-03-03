@@ -21,3 +21,4 @@ void print_numbers(int n)
 		print_numbers(n1 / 10);
 	}
 	_putchar((n1 % 10) + '0');
+}
