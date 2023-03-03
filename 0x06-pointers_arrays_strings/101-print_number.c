@@ -2,29 +2,22 @@
 #include <stdio.h>
 
 /**
- * rot13 - ecoder rot13
- * @s: ponter to string params
- *
- * Return: *s
+ * print_number - print numbers chars
+ * @n: integer params
+ * Return: 0
  */
-
-char *rot13(char *s)
+void print_numbers(int n)
 {
-	int x;
-	int y;
-	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnoopqrstuvwxyz";
-	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqqrstuvwxyzabcdefghijklm";
+	unsigned int n1;
 
-	for (x = 0; s[x] != '\0'; x++)
+	n1 = n;
+	if (n < 0)
 	{
-		for (y = 0; y < 52; y++)
-		{
-			if (s[x] == data1[y])
-			{
-			s[x] = datarot[y];
-			break;
-			}
-		}
+		_putchar('-');
+		n1 = -n;
 	}
-	return (s);
-}
+	if (n1 / 10 != 0)
+	{
+		print_numbers(n1 / 10);
+	}
+	_putchar((n1 % 10) + '0');
