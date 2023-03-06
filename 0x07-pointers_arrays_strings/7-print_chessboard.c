@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_chessbord - Entry point
@@ -10,13 +9,13 @@
 
 void print_chessbord(char (*a)[8])
 {
-	int x;
-	int y;
+	int i;
+	int n;
 
-	for (x = 0; x < 8; x++)
+	for (i = 0; i < 8; i++)
 	{
-		for (y = 0; y < 8; y++)
-		_putchar(a[x][y]);
+		for (n = 0; n < 8; n++)
+		_putchar(a[i][n]);
 		_putchar('\n');
 	}
 }
