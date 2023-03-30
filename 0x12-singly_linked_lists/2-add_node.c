@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <string.h>
 #include <stdlib.h>
-
+#include <stddef.h>
 /**
  * add_node - Adds a new node at the beginning
  * of a list_t list
@@ -16,7 +16,7 @@ list_t *add_node(list_t **head, const char *str)
 {
 list_t *newNode;
 unsigned int length = 0;
-	
+
 	newNode = malloc(sizeof(list_t));
 	if (newNode == NULL)
 	{
