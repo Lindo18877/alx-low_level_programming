@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdstring.h>
+#include <stddef.h>
 
 /**
  * struct listint_s - singly linkd lsts
@@ -10,7 +12,7 @@
  * @next: points to nxt nod
  *
  * Description: singly linkd list nod structure
- * for 0x13.c more linked lists
+ * for more linked lists
  */
 
 typedef struct listint_s

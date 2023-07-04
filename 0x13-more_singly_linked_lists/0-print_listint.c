@@ -6,16 +6,17 @@
  *
  * Return: number of nodes
  */
+
 size_t print_listint(const listint_t *h)
 {
-	size_t num = 0;
+	unsigned int nodes = 0;
+	const listint_t *new_node = h;
 
-	while (h)
+	for (; new_node; new_node = new_node->next)
 	{
-		printf("%d\n", h->n);
-		num++;
-		h = h->next;
+		printf("%d\n", new_node->n);
+		nodes++;
 	}
 
-	return (num);
+	return (nodes);
 }
